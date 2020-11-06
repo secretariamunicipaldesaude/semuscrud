@@ -1,4 +1,4 @@
-# :rocket: CRUDBOOSTER - Laravel CRUD Generator
+# :rocket: SEMUSCRUD based on CRUDBOOSTER - Laravel CRUD Generator
 [![Latest Stable Version](https://poser.pugx.org/semuscrud/crudbooster/v/stable)](https://packagist.org/packages/semuscrud/crudbooster)
 [![Total Downloads](https://poser.pugx.org/semuscrud/crudbooster/downloads)](https://packagist.org/packages/semuscrud/crudbooster)
 [![License](https://poser.pugx.org/semuscrud/crudbooster/license)](https://packagist.org/packages/semuscrud/crudbooster)
