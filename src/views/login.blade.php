@@ -57,15 +57,16 @@
 
 <body class="login-page">
 
-<div class="login-box">
-    <div class="login-logo">
-        <a href="{{url('/')}}">
-            <img title='{!!(Session::get('appname') == 'CRUDBooster')?"<b>CRUD</b>Booster":CRUDBooster::getSetting('appname')!!}'
-                 src='{{ CRUDBooster::getSetting("logo")?asset(CRUDBooster::getSetting('logo')):asset('vendor/crudbooster/assets/logo_crudbooster.png') }}'
-                 style='max-width: 100%;max-height:170px'/>
-        </a>
-    </div><!-- /.login-logo -->
+<div class="login-box" style="padding:50px 0px 0px 0px">
+   
     <div class="login-box-body">
+        <div class="login-logo">
+            <a href="{{url('/')}}">
+                <img title='{!!(Session::get('appname') == 'CRUDBooster')?"<b>CRUD</b>Booster":CRUDBooster::getSetting('appname')!!}'
+                    src='{{ CRUDBooster::getSetting("logo")?asset(CRUDBooster::getSetting('logo')):asset('vendor/crudbooster/assets/logo_crudbooster.png') }}'
+                    style='max-width: 100%;max-height:170px'/>
+            </a>
+        </div><!-- /.login-logo -->
 
         @if ( Session::get('message') != '' )
             <div class='alert alert-warning'>
@@ -108,6 +109,11 @@
                 <div class='col-xs-12' align="center"><p style="padding:10px 0px 10px 0px">{{cbLang("text_forgot_password")}} <a
                                 href='{{route("getForgot")}}'>{{cbLang("click_here")}}</a></p></div>
             </div>
+            <div class='row'>
+                <div class='col-xs-12' align="center"><p style="padding:1px 0px 1px 0px">DEPARTAMENTO DE TECNOLOGIA DA INFORMAÇÃO</p></div>
+                <div class='col-xs-12' align="center"><p style="padding:1px 0px 1px 0px">(63) 3412-8569</p></div>
+            </div>
+            </div>            
         </form>
 
 
