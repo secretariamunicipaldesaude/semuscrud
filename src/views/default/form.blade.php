@@ -12,6 +12,9 @@
                         &nbsp; {{cbLang("form_back_to_list",['module'=>CRUDBooster::getCurrentModule()->name])}}</a></p>
             @endif
         @endif
+        <div>
+            <button class="btn btn-primary" onclick="window.print()">Imprimir</button>
+        </div>
 
         <div class="panel panel-default">
             <div class="panel-heading">
