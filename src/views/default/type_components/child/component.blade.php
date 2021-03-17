@@ -40,6 +40,8 @@ $name = str_slug($form['label'], '');
                                                            class='form-control {{$col['required']?"required":""}}'
                                                             {{($col['readonly']===true)?"readonly":""}}
                                                     />
+						    @elseif($col['type']=='date')
+							<input id='{{$name_column}}' type='date' name='{{$col["name"]}}' class='form-control input_date {{$col['required']?"required":""}}' />
                                                 @elseif($col['type']=='radio')
                                                     <?php
                                                     if($col['dataenum']):
